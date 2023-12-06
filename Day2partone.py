@@ -30,7 +30,7 @@ possible_games = []
 with open('games.txt') as lines_doc:
   for single_game in lines_doc.readlines():
     result = matching_games(single_game, 12, 13, 14)
-    if result == False:
+    if result is False:
       continue
     else:
       possible_games.append(result)
