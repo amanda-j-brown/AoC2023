@@ -25,8 +25,7 @@ def matching_games(game, red, green, blue):
 
   colon_pos = string_to_list[1].index(":")
   return int(string_to_list[1][:colon_pos])
-
-
+  
 possible_games = []
 with open('games.txt') as lines_doc:
   for single_game in lines_doc.readlines():
