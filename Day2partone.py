@@ -23,10 +23,8 @@ def matching_games(game, red, green, blue):
     if num > green:
       return False
 
-  if len(string_to_list[1]) == 2:
-    return int(string_to_list[1][0])
-  else:
-    return int(string_to_list[1][:2])
+  colon_pos = string_to_list[1].index(":")
+  return int(string_to_list[1][:colon_pos])
 
 
 possible_games = []
